@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WHERE 2</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white; /* Color del texto */
+    }
+    .barra-superior {
+      background-color: #303030; /* Color gris */
+      height: 70px; /* Altura de la barra */
+      width: 100%; /* Ancho completo */
+      display: flex; /* Utiliza flexbox para alinear los elementos */
+      align-items: center; /* Centra verticalmente */
+      justify-content: space-around;
+      position: sticky;
+    }
+    .barra-superior h1, .barra-superior h2, .barra-superior h3, .barra-superior h4 {
+      margin: 0;
+    }
+    .contenedor {
+      display: flex; /* Utiliza flexbox para alinear los elementos */
+      justify-content: space-between; /* Espacia los elementos uniformemente */
+      padding: 20px;
+      background-color: #303030;
+      margin-top: 20px;
+      width: 70%;
+      height: 70px;
+    }
+    .contenedor .imagen {
+      flex: 1; /* Toma el espacio restante */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      text-align: right;
+      max-width: 20%;
+      max-height: 70vh;
+      align-self: flex-end;
+    }
+    .contenedor .texto {
+      flex: 1; /* Toma el espacio restante */
+    }
+
+    .barra-inferior {
+      background-color: #303030; /* Color gris */
+      height: 70px; /* Altura de la barra */
+      width: 100%; /* Ancho completo */
+      display: flex; /* Utiliza flexbox para alinear los elementos */
+      justify-content: space-around; /* Espacia los elementos uniformemente */
+      align-items: center; /* Centra verticalmente */
+      position: fixed; /* Fija la barra en su lugar */
+      bottom: 0; /* Barra en la parte inferior */
+      left: 0;
+      right: 0;
+      z-index: 1000; /* Asegura que la barra esté por encima del contenido */
+    }
+    .imagen-derecha {
+      max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+      max-height: 100vh; /* Limita la altura de la imagen al 100% de la altura del viewport */
+      margin-right: 20px; /* Ajusta el margen derecho para separar la imagen del borde */
+      align-self: flex-end; /* Alinea la imagen a la parte inferior del contenedor */
+    }
+    .barra-busqueda {
+      width: 50%;
+      margin: 20px auto;
+    }
+    .barra-busqueda input {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="barra-superior">
+  <h1>WHERE 2</h1>
+  <div>
+    <h2>Sobre nosotros</h2>
+    <h3>Recomendaciones</h3>
+    <h4>Explorar</h4>
+  </div>
+  <div class="imagen">
+    <img src="https://i.imgur.com/Oc2198L.png" alt="Logo" style="height: 40px;">
+  </div>
+</div>
+
+<div class="barra-busqueda">
+  <input type="text" placeholder="Buscar...">
+</div>
+
+<div style="display: flex;">
+  <div style="width: 70%;">
+    <div class="contenedor">
+      <div class="texto">Lugar Palacio Real</div>
+      <div class="texto">El Palacio Real es el más grande de Europa Occidental y uno de los más grandes del mundo</div>
+      <div class="imagen">
+        <img src="https://i.imgur.com/jT3MmWC.jpeg" alt="Palacio Real" style="max-width: 100%; max-height: 200px;">
+      </div>
+    </div>
+    <div class="contenedor">
+      <div class="texto">Restaurante El Paladar</div>
+      <div class="texto">De los mejores restaurantes de toda Madrid, con un sabor único y galardonado con dos estrellas Michelin</div>
+      <div class="imagen">
+        <img src="https://i.imgur.com/vI7IUc0.jpeg" alt="Decoración" style="max-width: 100%; max-height: 200px;">
+      </div>
+    </div>
+    <div class="contenedor">
+      <div class="texto">Restaurante Montes de Galicia</div>
+      <div class="texto">De los mejores restaurantes de toda Madrid, con un sabor único y galardonado con una estrella Michelin</div>
+      <div class="imagen">
+        <img src="https://i.imgur.com/EHSsaVE.jpeg" alt="Paella" style="max-width: 100%; max-height: 200px;">
+      </div>
+    </div>
+    <div class="contenedor">
+      <div class="texto">Bar El Sordo</div>
+      <div class="texto">El mejor ambiente de Madrid para divertirse y bailar un rato</div>
+      <div class="imagen">
+        <img src="https://i.imgur.com/YvaLb1i.jpeg" alt="Barra" style="max-width: 100%; max-height: 200px;">
+      </div>
+    </div>
+  </div>
+  <div style="width: 50%;">
+    <div style="text-align:right;">
+      <div class="imagen-derecha">
+        <img src="https://i.imgur.com/H1g2KGp.jpeg" alt="Mapa">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="barra-inferior">
+  <h5>Descargar aplicación</h5>
+  <h5>Condiciones de uso</h5>
+  <h5>Preguntas frecuentes</h5>
+  <h5>Trabaja con nosotros</h5>
+  <h5>2024 WHERE 2- TODOS LOS DERECHOS RESERVADOS</h5>
+</div>
+
+</body>
+</html>
+
